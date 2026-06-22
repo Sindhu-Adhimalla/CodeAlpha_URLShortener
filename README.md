@@ -2,19 +2,19 @@
 URL Shortener built using Flask and SQLite with custom alias feature and user-friendly web interface.
 # 🔗 URL Shortener Web App
 
-## 📌 About the Project
+##  About the Project
 This is a simple URL Shortener web application built using Flask. It converts long URLs into short, easy-to-share links and redirects users to the original URL.
 
-## 🚀 Features
+##  Features
 - Shortens long URLs into small links  
 - Redirects short URL to original URL  
 - Stores URLs using SQLite database  
 - Simple and clean user interface  
 
-## 🛠️ Tech Stack
-- Python 🐍  
-- Flask 🌶️  
-- SQLite 🗄️  
+##  Tech Stack
+- Python   
+- Flask  
+- SQLite   
 - HTML, CSS  
 
 ## 📁 Project Structure
@@ -48,7 +48,7 @@ http://127.0.0.1:5000
 <img width="983" height="602" alt="Screenshot 2026-06-22 110911" src="https://github.com/user-attachments/assets/f5a0667e-aa6a-4187-be39-deebe5114a20" />
 
 
-## 🎯 Future Improvements
+##  Future Improvements
 - Add QR code generation  
 - Add click tracking analytics  
 - Add custom short URLs  
