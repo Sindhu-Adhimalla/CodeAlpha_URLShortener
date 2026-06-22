@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #318189, #5060a7);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        div {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #6c63ff;
+            box-shadow: 0 0 5px rgba(108,99,255,0.5);
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #5548d9;
+        }
+
+        p {
+            margin-top: 15px;
+            word-wrap: break-word;
+        }
+
+        a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body >
+    <div>
+    <form method="post">
+   <h1>URL Shortener</h1>
+   <input type="text" placeholder="Enter the link" name="link">
+   <input type="text" name="alias" placeholder="Custom alias (optional)">
+   <button type="submit" >generate</button>
+   {% if short_url %}
+    <p>Short url  <a href="{{ short_url }}" >{{ short_url }}</a></p>
+    {% endif %}
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    </form>
+    </div>
+</body>
+</html>
